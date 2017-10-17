@@ -15,7 +15,7 @@
     <!-- 定义事务管理器 -->
     <bean id="transactionManager"
           class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSource"/>
+        <property name="dataSource" ref="dataSourceBack"/>
     </bean>
 
     <!-- 定义事务策略 -->

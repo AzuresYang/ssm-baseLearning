@@ -2,7 +2,7 @@ package test;
 
 import org.apache.ibatis.session.SqlSession;
 import test.mapper.CustomerMapper;
-import test.mapper.DBTools;
+import cn.ssm.DBTools;
 
 import java.util.List;
 
