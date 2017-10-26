@@ -1,0 +1,27 @@
+package cn.exception;
+
+/**
+ * Created by 28029 on 2017/10/26.
+ */
+public class CustomException extends Exception
+{
+
+    //异常信息
+    private String message;
+
+    public CustomException(String message)
+    {
+        super(message);
+        this.message=message;
+
+    }
+
+    @Override
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+}

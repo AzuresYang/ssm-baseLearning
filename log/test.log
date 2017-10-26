@@ -1,0 +1,176 @@
+21:49:57.476 INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager 230 enableSessionValidation - Enabling session validation scheduler...
+21:49:57.863 INFO  test.Login 61 testPremission - 用户：Azure登陆成功
+21:49:57.864 INFO  test.Login 66 testPremission - 没有角色：Roles
+21:49:57.866 INFO  test.Login 71 testPremission - 没有写权限
+21:50:16.419 INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager 230 enableSessionValidation - Enabling session validation scheduler...
+21:50:16.811 INFO  test.Login 61 testPremission - 用户：Azure登陆成功
+21:50:16.812 INFO  test.Login 66 testPremission - 没有角色：Roles
+21:50:16.814 INFO  test.Login 71 testPremission - 没有写权限
+21:50:59.082 DEBUG org.apache.shiro.io.ResourceUtils 159 loadFromClassPath - Opening resource from class path [config/shiro.ini]
+21:50:59.093 DEBUG org.apache.shiro.config.Ini 342 load - Parsing [users]
+21:50:59.095 DEBUG org.apache.shiro.config.IniFactorySupport 122 createInstance - Creating instance from Ini [sections=users]
+21:50:59.159 DEBUG org.apache.shiro.realm.text.IniRealm 185 processDefinitions - Discovered the [users] section.  Processing...
+21:50:59.188 DEBUG org.apache.shiro.realm.AuthenticatingRealm 569 getAuthenticationInfo - Looked up AuthenticationInfo [Azure] from doGetAuthenticationInfo
+21:50:59.189 DEBUG org.apache.shiro.realm.AuthenticatingRealm 507 cacheAuthenticationInfoIfPossible - AuthenticationInfo caching is disabled for info [Azure].  Submitted token: [org.apache.shiro.authc.UsernamePasswordToken - Azure, rememberMe=true].
+21:50:59.189 DEBUG org.apache.shiro.authc.credential.SimpleCredentialsMatcher 95 equals - Performing credentials equality check for tokenCredentials of type [[C and accountCredentials of type [java.lang.String]
+21:50:59.190 DEBUG org.apache.shiro.authc.credential.SimpleCredentialsMatcher 101 equals - Both credentials arguments can be easily converted to byte arrays.  Performing array equals comparison
+21:50:59.191 DEBUG org.apache.shiro.authc.AbstractAuthenticator 231 authenticate - Authentication successful for token [org.apache.shiro.authc.UsernamePasswordToken - Azure, rememberMe=true].  Returned account [Azure]
+21:50:59.192 DEBUG org.apache.shiro.subject.support.DefaultSubjectContext 102 resolveSecurityManager - No SecurityManager available in subject context map.  Falling back to SecurityUtils.getSecurityManager() lookup.
+21:50:59.192 DEBUG org.apache.shiro.subject.support.DefaultSubjectContext 102 resolveSecurityManager - No SecurityManager available in subject context map.  Falling back to SecurityUtils.getSecurityManager() lookup.
+21:50:59.193 DEBUG org.apache.shiro.session.mgt.AbstractValidatingSessionManager 213 createSessionValidationScheduler - No sessionValidationScheduler set.  Attempting to create default instance.
+21:50:59.196 INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager 230 enableSessionValidation - Enabling session validation scheduler...
+21:50:59.207 DEBUG org.apache.shiro.session.mgt.DefaultSessionManager 175 create - Creating new EIS record for new session instance [org.apache.shiro.session.mgt.SimpleSession,id=null]
+21:50:59.602 INFO  test.Login 61 testPremission - 用户：Azure登陆成功
+21:50:59.606 INFO  test.Login 66 testPremission - 没有角色：Roles
+21:50:59.608 INFO  test.Login 71 testPremission - 没有写权限
+22:22:58.392 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:22:58.395 INFO  org.apache.shiro.config.IniSecurityManagerFactory 112 isAutoApplyRealms - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+22:22:58.406 INFO  cn.shiro.PasswordRealml 68 doGetAuthenticationInfo - ————————获取授权信息————————————
+22:22:58.406 INFO  cn.shiro.PasswordRealml 69 doGetAuthenticationInfo - username:Azure
+22:22:58.407 INFO  cn.shiro.PasswordRealml 73 doGetAuthenticationInfo - password:1234
+22:22:58.410 INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager 230 enableSessionValidation - Enabling session validation scheduler...
+22:22:58.806 INFO  test.Login 61 testPremission - 用户：Azure登陆成功
+22:22:58.807 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:22:58.807 INFO  cn.shiro.PasswordRealml 30 doGetAuthorizationInfo - ——————————PasswrodRealml:doGetAuthorizationInfo方法被调用——————————————
+22:22:58.808 INFO  test.Login 66 testPremission - 没有角色：Roles
+22:22:58.810 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:22:58.811 INFO  cn.shiro.PasswordRealml 30 doGetAuthorizationInfo - ——————————PasswrodRealml:doGetAuthorizationInfo方法被调用——————————————
+22:22:58.812 INFO  test.Login 71 testPremission - 没有写权限
+22:24:32.900 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:24:32.907 INFO  org.apache.shiro.config.IniSecurityManagerFactory 112 isAutoApplyRealms - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+22:24:32.919 INFO  cn.shiro.PasswordRealml 68 doGetAuthenticationInfo - ————————获取授权信息————————————
+22:24:32.919 INFO  cn.shiro.PasswordRealml 69 doGetAuthenticationInfo - username:zhang
+22:24:32.919 INFO  cn.shiro.PasswordRealml 73 doGetAuthenticationInfo - password:123
+22:24:32.920 INFO  test.Login 51 testPremission - 没有该用户： zhang
+22:24:32.920 INFO  test.Login 66 testPremission - 没有角色：Roles
+22:24:32.921 INFO  test.Login 71 testPremission - 没有写权限
+22:25:44.615 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:25:44.618 INFO  org.apache.shiro.config.IniSecurityManagerFactory 112 isAutoApplyRealms - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+22:25:44.642 INFO  cn.shiro.PasswordRealml 68 doGetAuthenticationInfo - ————————获取授权信息————————————
+22:25:44.643 INFO  cn.shiro.PasswordRealml 69 doGetAuthenticationInfo - username:zhang
+22:25:44.643 INFO  cn.shiro.PasswordRealml 73 doGetAuthenticationInfo - password:123
+22:25:44.644 INFO  test.Login 51 testPremission - 没有该用户： zhang
+22:25:44.644 INFO  test.Login 63 testPremission - 用户：null登陆失败
+22:25:44.645 INFO  test.Login 67 testPremission - 没有角色：Roles
+22:25:44.645 INFO  test.Login 72 testPremission - 没有写权限
+22:27:49.706 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:27:49.712 INFO  org.apache.shiro.config.IniSecurityManagerFactory 112 isAutoApplyRealms - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+22:27:49.744 INFO  cn.shiro.PasswordRealml 68 doGetAuthenticationInfo - ————————获取授权信息————————————
+22:27:49.748 INFO  cn.shiro.PasswordRealml 69 doGetAuthenticationInfo - username:zhang
+22:27:49.750 INFO  cn.shiro.PasswordRealml 73 doGetAuthenticationInfo - password:123
+22:27:49.753 INFO  test.Login 51 testPremission - 没有该用户： zhang
+22:28:04.276 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:28:04.283 INFO  org.apache.shiro.config.IniSecurityManagerFactory 112 isAutoApplyRealms - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+22:28:04.300 INFO  cn.shiro.PasswordRealml 68 doGetAuthenticationInfo - ————————获取授权信息————————————
+22:28:04.301 INFO  cn.shiro.PasswordRealml 69 doGetAuthenticationInfo - username:Azure
+22:28:04.301 INFO  cn.shiro.PasswordRealml 73 doGetAuthenticationInfo - password:1234
+22:28:04.304 INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager 230 enableSessionValidation - Enabling session validation scheduler...
+22:28:04.702 INFO  test.Login 66 testPremission - 用户：Azure登陆成功
+22:28:04.703 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:28:04.703 INFO  cn.shiro.PasswordRealml 30 doGetAuthorizationInfo - ——————————PasswrodRealml:doGetAuthorizationInfo方法被调用——————————————
+22:28:04.703 INFO  test.Login 72 testPremission - 没有角色：Roles
+22:28:04.705 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:28:04.705 INFO  cn.shiro.PasswordRealml 30 doGetAuthorizationInfo - ——————————PasswrodRealml:doGetAuthorizationInfo方法被调用——————————————
+22:28:04.705 INFO  test.Login 77 testPremission - 没有写权限
+22:29:10.335 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:29:10.342 INFO  org.apache.shiro.config.IniSecurityManagerFactory 112 isAutoApplyRealms - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+22:29:10.356 INFO  cn.shiro.PasswordRealml 68 doGetAuthenticationInfo - ————————获取授权信息————————————
+22:29:10.357 INFO  cn.shiro.PasswordRealml 69 doGetAuthenticationInfo - username:Azure
+22:29:10.358 INFO  cn.shiro.PasswordRealml 73 doGetAuthenticationInfo - password:1234
+22:29:10.361 INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager 230 enableSessionValidation - Enabling session validation scheduler...
+22:29:10.834 INFO  test.Login 66 testPremission - 用户：Azure登陆成功
+22:29:10.835 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:29:10.836 INFO  cn.shiro.PasswordRealml 30 doGetAuthorizationInfo - ——————————PasswrodRealml:doGetAuthorizationInfo方法被调用——————————————
+22:29:10.836 INFO  test.Login 70 testPremission - 有角色：role1
+22:29:10.838 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:29:10.838 INFO  cn.shiro.PasswordRealml 30 doGetAuthorizationInfo - ——————————PasswrodRealml:doGetAuthorizationInfo方法被调用——————————————
+22:29:10.839 INFO  test.Login 77 testPremission - 没有写权限
+22:30:03.120 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:30:03.124 INFO  org.apache.shiro.config.IniSecurityManagerFactory 112 isAutoApplyRealms - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+22:30:03.133 INFO  cn.shiro.PasswordRealml 68 doGetAuthenticationInfo - ————————获取授权信息————————————
+22:30:03.134 INFO  cn.shiro.PasswordRealml 69 doGetAuthenticationInfo - username:Azure
+22:30:03.135 INFO  cn.shiro.PasswordRealml 73 doGetAuthenticationInfo - password:1234
+22:30:03.140 INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager 230 enableSessionValidation - Enabling session validation scheduler...
+22:30:03.638 INFO  test.Login 66 testPremission - 用户：Azure登陆成功
+22:30:03.640 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:30:03.641 INFO  cn.shiro.PasswordRealml 30 doGetAuthorizationInfo - ——————————PasswrodRealml:doGetAuthorizationInfo方法被调用——————————————
+22:30:03.642 INFO  test.Login 70 testPremission - 有角色：role1
+22:30:03.646 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:30:03.647 INFO  cn.shiro.PasswordRealml 30 doGetAuthorizationInfo - ——————————PasswrodRealml:doGetAuthorizationInfo方法被调用——————————————
+22:30:03.648 INFO  test.Login 77 testPremission - 没有写权限
+22:31:55.337 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:31:55.348 INFO  org.apache.shiro.config.IniSecurityManagerFactory 112 isAutoApplyRealms - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+22:31:55.370 INFO  cn.shiro.PasswordRealml 68 doGetAuthenticationInfo - ————————获取授权信息————————————
+22:31:55.371 INFO  cn.shiro.PasswordRealml 69 doGetAuthenticationInfo - username:Azure
+22:31:55.372 INFO  cn.shiro.PasswordRealml 73 doGetAuthenticationInfo - password:1234
+22:31:55.376 INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager 230 enableSessionValidation - Enabling session validation scheduler...
+22:31:55.777 INFO  test.Login 66 testPremission - 用户：Azure登陆成功
+22:31:55.778 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:31:55.778 INFO  cn.shiro.PasswordRealml 30 doGetAuthorizationInfo - ——————————PasswrodRealml:doGetAuthorizationInfo方法被调用——————————————
+22:31:55.779 INFO  test.Login 70 testPremission - 有角色：role1
+22:31:55.780 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:31:55.781 INFO  cn.shiro.PasswordRealml 30 doGetAuthorizationInfo - ——————————PasswrodRealml:doGetAuthorizationInfo方法被调用——————————————
+22:31:55.781 INFO  test.Login 75 testPremission - 拥有权限:write-all
+22:34:46.237 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:34:46.241 INFO  org.apache.shiro.config.IniSecurityManagerFactory 112 isAutoApplyRealms - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+22:34:46.257 INFO  cn.shiro.PasswordRealml 68 doGetAuthenticationInfo - ————————获取授权信息————————————
+22:34:46.257 INFO  cn.shiro.PasswordRealml 69 doGetAuthenticationInfo - username:Azure
+22:34:46.258 INFO  cn.shiro.PasswordRealml 73 doGetAuthenticationInfo - password:1234
+22:34:46.324 INFO  test.Login 54 testPremission - Azure 的密码不正确!
+22:35:51.409 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:35:51.414 INFO  org.apache.shiro.config.IniSecurityManagerFactory 112 isAutoApplyRealms - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+22:35:51.433 INFO  cn.shiro.PasswordRealml 68 doGetAuthenticationInfo - ————————获取授权信息————————————
+22:35:51.434 INFO  cn.shiro.PasswordRealml 69 doGetAuthenticationInfo - username:Azure
+22:35:51.435 INFO  cn.shiro.PasswordRealml 73 doGetAuthenticationInfo - password:1234
+22:35:51.447 INFO  test.Login 54 testPremission - Azure 的密码不正确!
+22:36:02.926 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:36:02.928 INFO  org.apache.shiro.config.IniSecurityManagerFactory 112 isAutoApplyRealms - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+22:36:02.941 INFO  cn.shiro.PasswordRealml 68 doGetAuthenticationInfo - ————————获取授权信息————————————
+22:36:02.941 INFO  cn.shiro.PasswordRealml 69 doGetAuthenticationInfo - username:Azure
+22:36:02.942 INFO  cn.shiro.PasswordRealml 73 doGetAuthenticationInfo - password:1234
+22:36:02.954 INFO  test.Login 54 testPremission - Azure 的密码不正确!
+22:36:24.833 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:36:24.837 INFO  org.apache.shiro.config.IniSecurityManagerFactory 112 isAutoApplyRealms - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+22:36:24.850 INFO  cn.shiro.PasswordRealml 68 doGetAuthenticationInfo - ————————获取授权信息————————————
+22:36:24.850 INFO  cn.shiro.PasswordRealml 69 doGetAuthenticationInfo - username:Azure
+22:36:24.851 INFO  cn.shiro.PasswordRealml 73 doGetAuthenticationInfo - password:1234
+22:36:24.851 INFO  test.Login 61 testPremission - Azure 其它异常 ，请联系管理员
+22:36:47.257 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:36:47.263 INFO  org.apache.shiro.config.IniSecurityManagerFactory 112 isAutoApplyRealms - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+22:36:47.281 INFO  cn.shiro.PasswordRealml 68 doGetAuthenticationInfo - ————————获取授权信息————————————
+22:36:47.284 INFO  cn.shiro.PasswordRealml 69 doGetAuthenticationInfo - username:Azure
+22:36:47.284 INFO  cn.shiro.PasswordRealml 73 doGetAuthenticationInfo - password:1234
+22:36:47.287 INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager 230 enableSessionValidation - Enabling session validation scheduler...
+22:36:47.706 INFO  test.Login 66 testPremission - 用户：Azure登陆成功
+22:36:47.706 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:36:47.707 INFO  cn.shiro.PasswordRealml 30 doGetAuthorizationInfo - ——————————PasswrodRealml:doGetAuthorizationInfo方法被调用——————————————
+22:36:47.707 INFO  test.Login 70 testPremission - 有角色：role1
+22:36:47.708 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:36:47.708 INFO  cn.shiro.PasswordRealml 30 doGetAuthorizationInfo - ——————————PasswrodRealml:doGetAuthorizationInfo方法被调用——————————————
+22:36:47.709 INFO  test.Login 75 testPremission - 拥有权限:write-all
+22:36:57.358 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:36:57.363 INFO  org.apache.shiro.config.IniSecurityManagerFactory 112 isAutoApplyRealms - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+22:36:57.380 INFO  cn.shiro.PasswordRealml 68 doGetAuthenticationInfo - ————————获取授权信息————————————
+22:36:57.381 INFO  cn.shiro.PasswordRealml 69 doGetAuthenticationInfo - username:Azure
+22:36:57.381 INFO  cn.shiro.PasswordRealml 73 doGetAuthenticationInfo - password:1234
+22:36:57.389 INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager 230 enableSessionValidation - Enabling session validation scheduler...
+22:36:57.833 INFO  test.Login 66 testPremission - 用户：Azure登陆成功
+22:36:57.833 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:36:57.834 INFO  cn.shiro.PasswordRealml 30 doGetAuthorizationInfo - ——————————PasswrodRealml:doGetAuthorizationInfo方法被调用——————————————
+22:36:57.835 INFO  test.Login 70 testPremission - 有角色：role1
+22:36:57.836 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+22:36:57.836 INFO  cn.shiro.PasswordRealml 30 doGetAuthorizationInfo - ——————————PasswrodRealml:doGetAuthorizationInfo方法被调用——————————————
+22:36:57.836 INFO  test.Login 75 testPremission - 拥有权限:write-all
+11:31:57.164 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+11:31:57.223 INFO  org.apache.shiro.config.IniSecurityManagerFactory 112 isAutoApplyRealms - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+11:31:57.265 INFO  cn.shiro.PasswordRealml 70 doGetAuthenticationInfo - ————————获取授权信息————————————
+11:31:57.266 INFO  cn.shiro.PasswordRealml 71 doGetAuthenticationInfo - username:Azure
+11:31:57.266 INFO  cn.shiro.PasswordRealml 75 doGetAuthenticationInfo - password:1234
+11:31:57.270 INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager 230 enableSessionValidation - Enabling session validation scheduler...
+11:31:57.562 INFO  test.Login 66 testPremission - 用户：Azure登陆成功
+11:31:57.563 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+11:31:57.563 INFO  cn.shiro.PasswordRealml 31 doGetAuthorizationInfo - ——————————PasswrodRealml:doGetAuthorizationInfo方法被调用——————————————
+11:31:57.564 INFO  test.Login 70 testPremission - 有角色：role1
+11:31:57.565 INFO  org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+11:31:57.565 INFO  cn.shiro.PasswordRealml 31 doGetAuthorizationInfo - ——————————PasswrodRealml:doGetAuthorizationInfo方法被调用——————————————
+11:31:57.565 INFO  test.Login 77 testPremission - 拥有权限:write-all

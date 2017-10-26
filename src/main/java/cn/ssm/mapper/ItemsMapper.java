@@ -3,11 +3,14 @@ package cn.ssm.mapper;
 import cn.pojo.Items;
 import cn.pojo.ItemsExample;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
+
 import java.util.List;
 
 /**
  * Created by 28029 on 2017/10/15.
  */
+@Repository
 public interface ItemsMapper {
     public List<Items> selectAll();
 

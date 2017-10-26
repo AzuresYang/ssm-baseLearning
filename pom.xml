@@ -23,9 +23,14 @@
     <!-- log4j和slf4j配置 -->
     <slf4j.version>1.7.25</slf4j.version>
     <log4j.version>2.8.2</log4j.version>
+    <logback.version>1.1.7</logback.version>
 
     <!--连接池-->
     <jolbox.version>0.8.0.RELEASE</jolbox.version>
+    <!-- Shiro的版本管理 -->
+
+    <shiro.version>1.2.3</shiro.version>
+
   </properties>
 
 
@@ -78,6 +83,14 @@
       <groupId>com.jolbox</groupId>
       <artifactId>bonecp-spring</artifactId>
       <version>${jolbox.version}</version>
+    </dependency>
+
+    <!-- 注解支持 -->
+    <!--mybatis 依赖的 插件 -->
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+      <version>1.8.4</version>
     </dependency>
 
     <!--Spring 测试开发包-->
@@ -177,6 +190,17 @@
       <scope>runtime</scope>
     </dependency>
 
+    <!--logback配置
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-core</artifactId>
+      <version>${logback.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>${logback.version}</version>
+    </dependency>-->
     <!--添加jsp依赖-->
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -224,6 +248,29 @@
       <version>1.2.2</version>
     </dependency>
 
+
+    <!-- shiro -->
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-core</artifactId>
+      <version>${shiro.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-web</artifactId>
+      <version>${shiro.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-spring</artifactId>
+      <version>${shiro.version}</version>
+    </dependency>
+     <!--添加shiro 缓存支持 -->
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-ehcache</artifactId>
+      <version>${shiro.version}</version>
+    </dependency>
 
   </dependencies>
   <build>
