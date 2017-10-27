@@ -19,9 +19,13 @@
             </list>
         </property>
     </bean>
+
     <context:component-scan base-package="cn.ssm.controller"  />
     <context:component-scan base-package="cn.ssm.mapper"  />
     <context:component-scan base-package="cn.ssm.service"  />
+    <context:component-scan base-package="cn.ssm.service.impl"  />
+    <context:component-scan base-package="cn.shiro"  />
+
     <!-- 支持上传文件 -->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
         <!-- 设置默认编码 -->

@@ -3,6 +3,7 @@ package cn.ssm.controller;
 import cn.pojo.Items;
 import cn.pojo.ItemsExample;
 import cn.ssm.service.ItemsService;
+import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.junit.runners.Parameterized;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,12 +25,14 @@ public class ItemsController
 {
     private static ItemsService itemService = new ItemsService();
     @RequestMapping("/item/edit")
+    @RequiresRoles(value={"商品管理员"})
     public String editItem(@RequestParam(required = true) int id, Model model){
         model.addAttribute("item",itemService.selectItemById(id));
         return "edititem";
     }
 
     @RequestMapping("/item/edit.action")
+    @RequiresRoles(value={"商品管理员"})
     public String updateItemsAction(Items item, Model model){
 
         String message;
@@ -43,6 +46,7 @@ public class ItemsController
     }
 
     @RequestMapping("/item/list")
+    @RequiresRoles(value={"商品管理员","用户管理员"})
     public String listItem(@RequestParam(required = false) String isQuery, Model model,RedirectAttributes attr){
 
         Map<String, Object> map = (Map<String, Object>) attr.getFlashAttributes();
@@ -73,6 +77,7 @@ public class ItemsController
     }
 
     @RequestMapping("/item/query.action")
+    @RequiresRoles(value={"商品管理员","用户管理员"})
     //在jsp中绑定该对象即可
     public String queryItemAction( Items selectItem,RedirectAttributes attr){
 

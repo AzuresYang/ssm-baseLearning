@@ -30,7 +30,7 @@ public class CustomExceptionResolver implements HandlerExceptionResolver
         //统一异常处理代码
         //针对系统自定义的CustomException异常，就可以直接从一场中获取一场信息，将异常处理在错误页面展示
         //异常信息
-        String message=null;
+        String message="未知错误";
         CustomException customException=null;
         //如果ex是系统自定义的异常，我们就直接取出异常信息
         if (ex instanceof CustomException)

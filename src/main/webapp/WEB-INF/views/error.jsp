@@ -12,8 +12,8 @@
     <title>error</title>
 </head>
 <body>
-${message} error !
-是否没有权限或者登陆失败。
+error !
+message=${message}
 <br>
 Return:<a href = <%= request.getHeader("Referer")%>> Last Page</a>
 </body>

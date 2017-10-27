@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-         pageEncoding="ISO-8859-1"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,8 +6,11 @@
     <title>请登录</title>
 </head>
 <body>
-<h1>login</h1>
-<form action="login">
+<h1>logind</h1>
+
+message:${message}
+<br>
+<form action="login.action" method="post">
     <label>username:</label>
     <input type="text" name="username"/>
     <label>password:</label>
